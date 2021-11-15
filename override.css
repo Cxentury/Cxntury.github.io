@@ -1,0 +1,17 @@
+.background{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('wolf.jpg');
+    background-size: cover;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+}
+
+.spacing{
+    margin-top:100px;
+    margin-left: 1px;
+    color: white;
+}
+
+.scroll{
+    position: fixed;
+}
