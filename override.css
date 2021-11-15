@@ -1,8 +1,7 @@
 .background{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('wolf.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('upscaled2.png');
     background-size: cover;
     height: 100%;
-    line-height: 100px;
     text-align: center;
 }
 
@@ -14,4 +13,11 @@
 
 .scroll{
     position: fixed;
+}
+
+.center {
+    position: absolute;
+    top: 65%;
+    right: 59%;
+    transform: translate(-50%, -50%)
 }
