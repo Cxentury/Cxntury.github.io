@@ -8,96 +8,145 @@
         <link href="override.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     </head>
-    <body style="background-color:#363636;">
-        <div class="container-fluid" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Blender/logo.png');background-repeat: no-repeat;background-position: right;">
-            <div class="btn-group" style="width: 33%; height: 60px;">
-                <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Java</button>
-                  <ul class="dropdown-menu" style="width: 100%; text-align: center" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="Modelisation.html">Modelisation</a></li>
-                    <li><a class="dropdown-item" href="Modelisation.html">Lineup</a></li>
-                    <li><a class="dropdown-item" href="Modelisation.html#IHM">IHM</a></li>
-                  </ul>
+    <body>
+        <div class="container-fluid" style="background: url('Blender/logo.png');background-repeat: no-repeat;background-position: right;">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <div class="btn-group" style="width: 100%; height: 60px;">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Java</button>
+                        <ul class="dropdown-menu" style="width: 100%; text-align: center" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="Modelisation.html">Modelisation</a></li>
+                            <li><a class="dropdown-item" href="Modelisation.html">Lineup</a></li>
+                            <li><a class="dropdown-item" href="Modelisation.html#IHM">IHM</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="btn-group" style="width: 100%; height: 60px">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">C</button>
+                            <ul class="dropdown-menu" style="width: 100%; text-align: center" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="C.html">Sokoban</a></li>
+                                <li><a class="dropdown-item" href="C.html">Shell</a></li>
+                                <li><a class="dropdown-item" href="C.html">Other</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="btn-group" style="width: 100%; height: 60px">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blender</button>
+                            <ul class="dropdown-menu" style="width: 100%; text-align: center" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="Blender.html">Night Portal</a></li>
+                                <li><a class="dropdown-item" href="Blender.html#Desktop">Desktop</a></li>
+                                <li><a class="dropdown-item" href="Blender.html#House">Floating House</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="btn-group" style="width: 100%; height: 60px">
+                        <a class="btn btn-outline-primary" href="index.html">Home</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="btn-group" style="width: 33%; height: 60px">
-                <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">C</button>
-                    <ul class="dropdown-menu" style="width: 100%; text-align: center" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="C.html">Sokoban</a></li>
-                        <li><a class="dropdown-item" href="C.html">Shell</a></li>
-                        <li><a class="dropdown-item" href="C.html">Other</a></li>
-                    </ul>
-            </div>
-            <div class="btn-group" style="width: 33%; height: 60px">
-                <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blender</button>
-                    <ul class="dropdown-menu" style="width: 100%; text-align: center" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="Blender.html">Night Portal</a></li>
-                        <li><a class="dropdown-item" href="Blender.html#Desktop">Desktop</a></li>
-                        <li><a class="dropdown-item" href="Blender.html#House">Floating House</a></li>
-                    </ul>
+            
+            <div class="row spacing animate__animated animate__fadeInDown" style="width:100%">
+                <div class="col-md-8">
+                    <div class="card" style="max-width: 800px;">                        
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div id="Portal" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Blender/Portal/nightPortal.png" style="width:100%;border-radius:10px; max-height: 290px;" class="d-block w-100" alt="nightPortal">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Blender/Portal/portail.png" style="border-radius:10px; max-height: 290px;" class="d-block w-100" alt="Portal">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Blender/Portal/earlyVersion.png" style="border-radius:10px; max-height: 290px;" class="d-block w-100" alt="earlyVersionPortal">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#Portal" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#Portal" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portail</h5>
+                                    <p class="card-text">J'ai réalise ce projet à l'aide d'un tutoriel car c'était l'un de mes tout premiers, mais j'ai rajouté par la suite des éléments qui n'y étaient pas à l'origine, tel que des citrouilles</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-            <div class="row spacing" style="width:100%">
-                <div class="col-md-3">
-                    <div id="Portal" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Blender/Portal/nightPortal.png" style="width:100%;border-radius:10px" class="d-block w-100" alt="nightPortal">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Blender/Portal/portail.png" style="border-radius:10px" class="d-block w-100" alt="Portal">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Blender/Portal/earlyVersion.png" style="border-radius:10px" class="d-block w-100" alt="earlyVersionPortal">
+            <div class="row spacing animate__animated animate__fadeInDown">
+                <div class="card" style="max-width: 800px;">                        
+                    <div class="row no-gutters">
+                        <div class="col-md-7">
+                            <div id="Desktop">
+                                <img src="Blender/Bureau.png" alt="" style="width:100%;border-radius:10px">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#Portal" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#Portal" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Conceptualisation de mon bureau</h5>
+                                <p class="card-text">Ce projet avait pour but de m'aider à concevoir mon bureau, j'ai pu grâce à lui visualiser ce qu'il donnerait en réalité</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <h4 class="item-name">Portail de nuit</h4>
-                </div>
             </div>
-            <div class="row spacing">
-                <div id="Desktop" class="col-md-3">
-                    <img src="Blender/Bureau.png" alt="" style="width:100%;border-radius:10px">
-                </div>
+
+            <div class="row spacing animate__animated animate__fadeInDown" style="width:100%">
                 <div class="col-md-5">
-                    <h4 class="item-name">Conceptualisation de mon Bureau</h4>
-                </div>
-            </div>
-            <div class="row spacing" style="width:100%">
-                <div class="col-md-3">
-                    <div id="House" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Blender/House/house.png" style="width:100%;border-radius:10px" class="d-block w-100" alt="...">
+                    <div class="card" style="max-width: 800px;">                        
+                        <div class="row no-gutters">
+                            <div class="col-md-7">
+                                <div id="House" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Blender/House/house.png" style="width:100%;border-radius:10px;max-height: 370px" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Blender/House/noSkyHouse.png" style="width:100%;border-radius:10px;max-height: 370px" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#House" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#House" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Blender/House/noSkyHouse.png" style="width:100%;border-radius:10px" class="d-block w-100" alt="...">
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maison dans le ciel</h5>
+                                    <p class="card-text">Mon premier projet complexe m'ayant pris plusieurs heures de travail, c'est une reproduction d'un dessin qui m'avait plus</p>
+                                </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#House" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#House" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <h4 class="item-name">Maison dans le ciel</h4>
-                </div>
             </div>
+
+            <div class="fixed-bottom" style="margin-left: 95%;">
+                <a href="#top"><img src="logos/shiba-inu-1770788_640.png" style="width: 80%;"></a>
+            </div>
+
         </div>
 </body>
 </html>

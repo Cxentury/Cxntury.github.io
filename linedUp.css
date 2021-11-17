@@ -1,0 +1,39 @@
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.background{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('backgrounds/koyasan-6584637_1920.jpg');
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+img {
+  width: 10%;
+  height: auto;
+}
+
+.margin{
+  padding-top: 20%;
+}
+
+.image {
+  opacity: 0.90;
+  transition: .5s ease;
+}
+
+.image:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
