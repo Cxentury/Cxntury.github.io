@@ -21,3 +21,13 @@
     right: 59%;
     transform: translate(-50%, -50%)
 }
+
+img{
+    image-rendering: -webkit-optimize-contrast;
+    transition: 0.5s ease;
+}
+
+
+img:hover{
+    transform: scale(1.2);
+} 
