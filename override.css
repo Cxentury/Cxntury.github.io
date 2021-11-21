@@ -32,14 +32,7 @@ img:hover{
     transform: scale(1.2);
 }
 
-.row{
-    z-index: 0;
-}
-
-ul{
-    z-index: 1;
-}
-.dropdown-menu{
-
-    z-index: 1;
+#drop{
+    position: relative;
+    z-index: 999;
 }
