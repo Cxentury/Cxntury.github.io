@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title flex-row">
+        <h1>PNG Color Modifier</h1>
+        <a href="https://github.com/Cxentury/PNG-Color-Modifier"><img src="logos/GitHub-Mark-32px.png"
+                class="ml-20 gitHub"></a>
+    </div>
+    <div class="flex">
+        <div class="container">
+            <div id="introduction">
+                <p class="description">
+                    Changes the desired color of the png using C
+                    This is a personnal project meant to improve in C and to understand how png worked 
+                    (using only wikipedia and other png-related ressources).<br>
+                    There are a lot of thing to optimise in this code but it is not the main point
+                </p>
+            </div>
+            <hr>
+            <div id="exImages">
+                <h2 class="title">Example images</h2>
+                <div class="displayedImages">
+                    <img src="c/pngColor/touhou.png" alt="original image" class="exampleImages">
+                    <img src="c/pngColor/touhouModified.png" alt="modified image" class="exampleImages">
+                </div>
+            </div>
+            <hr>
+            <div id="qExplenation">
+                <h2 class="title">Quick PNG explanation</h2>
+                <p class="description">
+                    A PNG is composed of many Chunck which contains informations about the image.<br>
+                    A header (not a Chunck), <b>IDHR</b> which contains informations such has width, height and bit
+                    depth,
+                    <b>PLTE</b> which is optionnal
+                    depending on the type of image but it is needed for my program to work.<br>
+                    Then we have the <b>IDAT</b> chunck with the image data and <b>IEND</b> chunck which marks the end
+                    of
+                    the image.<br>
+
+                </p>
+                <div class="box description">
+                    Header -> <b>IDHR</b> -> <b>(PLTE)</b> -> <b>IDAT</b>* -> <b>IEND</b><br>
+                </div>
+                <p class="description">
+                    (Those are only the critical chunck which cannot be ignored when parsing)<br><br>
+                    On a color type 3 image (indexed color) colors are stored in a Palette in the form (R,G,B) which is
+                    then
+                    associated
+                    to each pixel in the IDAT chunk. Meaning the first color to appear in the Palette is gonna have
+                    index 0
+                    and the pixel needing this color will be associated with it
+                </p>
+            </div>
+            <hr>
+            <div id="programDescription">
+                <h2 class="title">What my program does</h2>
+                <p class="description">
+                    Briefly, my program parses the PNG image, checks if it is indeed a PNG and if it is of color
+                    type 3
+                    and then displays all colors present in the PLTE Chunck (so all the color present in the image), it
+                    then
+                    asks user which one to remplace and with what color.<br>
+                    I then replace the bytes in the image and update the CRC (which is a way to check no data was
+                    lost).<br>
+                    As I said in the <a href="#qExplanation" class="no-decoration">Quick explanation</a> each pixel in
+                    the
+                    image is associated with its color from the Palette, meaning that changing one color<br>
+                    changes every pixel associated with it, as you can see in the <a href="#exImages"
+                        class="no-decoration">example images</a> the mouth as also changed color because I changed all
+                    red
+                    pixel to purle<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
