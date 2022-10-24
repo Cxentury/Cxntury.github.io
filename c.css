@@ -11,24 +11,24 @@ body{
     color: white;
 }
 
+ /*Common*/
 .title{
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    max-width: 40px;
 }
 
 .ml-20{
     margin-left: 20px;
 }
 
-.gitHub{
-    filter: invert(100%);
-}
-
 .flex{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     line-height: 1.6;
 }
 .flex-row{
@@ -50,6 +50,11 @@ body{
     font-family: 'Roboto', sans-serif;
     text-align:start;
     font-size: clamp(12px,20px,2vw);
+}
+
+/*C Page*/
+.gitHub{
+    filter: invert(100%);
 }
 
 .box{
@@ -81,4 +86,20 @@ body{
 .no-decoration:visited{
     text-decoration: none;
     color:#fa5e43;
+}
+
+/*Blender Page*/
+
+.projectContainer{
+    margin-top: 20px;;
+}
+.video{
+    width:100%;
+    max-width: 550px;
+    max-height: 300px;
+}
+
+.noodleShop{
+    border-radius: 15px;;
+    max-width: 550px;
 }
