@@ -5,26 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400&display=swap"
         rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="sidenav">
+        <div class="navElement">
+            <a href="#">JavaScript</a>
+            <img src="./logos/js.png" / class="invert mh-20">
+        </div>
+        <div class="navElement">
+            <a href="./Blender.html">Blender</a>
+            <img src="./logos/blender.png" />
+        </div>
+        <div class="navElement">
+            <a href="https://github.com/Cxentury">GitHub</a>
+            <img src="./logos/GitHub-Mark-32px.png" / class="invert">
+        </div>
+        <div class="navElement">
+            <a href="./Java.html">Java</a>
+            <img src="./logos/javaRed.png" />
+        </div>
+        <div class="navElement">
+            <a href="./C.html">C</a>
+            <img src="./logos/c.png" />
+        </div>
+    </div>
+
     <div class="title flex-row">
         <h1>PNG Color Modifier</h1>
         <a href="https://github.com/Cxentury/PNG-Color-Modifier"><img src="logos/GitHub-Mark-32px.png"
-                class="ml-20 gitHub"></a>
+                class="ml-20 invert"></a>
     </div>
     <div class="flex">
         <div class="container">
             <div id="introduction">
                 <p class="description">
-                    Changes the desired color of the png using C
-                    This is a personnal project meant to improve in C and to understand how png worked 
-                    (using only wikipedia and other png-related ressources).<br>
-                    There are a lot of thing to optimise in this code but it is not the main point
+                    Changes the desired color of the PNG using C.
+                    This is a personal project meant to improve in C and understand how PNG work
+                    (using only Wikipedia and other PNG related resources).<br>
+                    There are a lot of things to optimise in this code, but it is not the main point
                 </p>
             </div>
             <hr>
@@ -35,8 +58,27 @@
                     <img src="C/pngColor/touhouModified.png" alt="modified image" class="exampleImages">
                 </div>
             </div>
+            <br>
             <hr>
-            <div id="qExplenation">
+            <div id="programDescription">
+                <h2 class="title">What my program does</h2>
+                <p class="description">
+                    Briefly, my program parses the PNG image, checks if it's indeed a PNG of color
+                    type 3
+                    and then displays all colors present in the PLTE Chunck (so all the color present in the image), it
+                    then
+                    asks the user which one to replace and with what color.<br>
+                    I then replace the concerned bytes in the image and update the CRC, which is an algorithm used to check for potential data corruption or loss.<br>
+                    As said in the <a href="#qExplanation" class="no-decoration">Quick explanation</a> each pixel in
+                    the
+                    image is associated with its color from the Palette, meaning that changing one color
+                    changes every pixel associated with it, as you can see in the <a href="#exImages"
+                        class="no-decoration">example images</a> the mouth as also changed color because I changed all
+                    red pixel to purple<br>
+                </p>
+            </div>
+            <hr>
+            <div id="qExplanation">
                 <h2 class="title">Quick PNG explanation</h2>
                 <p class="description">
                     A PNG is composed of many Chunck which contains informations about the image.<br>
@@ -59,26 +101,6 @@
                     to each pixel in the IDAT chunk. Meaning the first color to appear in the Palette is gonna have
                     index 0
                     and the pixel needing this color will be associated with it
-                </p>
-            </div>
-            <hr>
-            <div id="programDescription">
-                <h2 class="title">What my program does</h2>
-                <p class="description">
-                    Briefly, my program parses the PNG image, checks if it is indeed a PNG and if it is of color
-                    type 3
-                    and then displays all colors present in the PLTE Chunck (so all the color present in the image), it
-                    then
-                    asks user which one to remplace and with what color.<br>
-                    I then replace the bytes in the image and update the CRC (which is a way to check no data was
-                    lost).<br>
-                    As I said in the <a href="#qExplanation" class="no-decoration">Quick explanation</a> each pixel in
-                    the
-                    image is associated with its color from the Palette, meaning that changing one color<br>
-                    changes every pixel associated with it, as you can see in the <a href="#exImages"
-                        class="no-decoration">example images</a> the mouth as also changed color because I changed all
-                    red
-                    pixel to purle<br>
                 </p>
             </div>
         </div>
