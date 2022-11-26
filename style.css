@@ -20,6 +20,10 @@ body {
     padding-top: 5px;
 }
 
+.br-8{
+    border-radius: 8px;
+}
+
 /*Display*/
 .imageDisplay {
     position: relative;
@@ -33,7 +37,8 @@ body {
     top: 0px;
     border-radius: 15px;
 }
-.ahbRight{
+
+.ahbRight {
     right: 0px;
 }
 
@@ -63,6 +68,12 @@ body {
 }
 
 /* sidebar menu */
+.listItems{
+    background-color:rgb(147, 71, 71);
+    padding: 2px 12px 2px 10px;
+    border-radius: 10px;
+    position: fixed;
+}
 .sidenav {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
@@ -74,7 +85,7 @@ body {
     /* Stay on top */
     top: 0;
     /* Stay at the top */
-    left: 0;
+    left: 0px;
     background-color: #111;
     /* Black */
     overflow-x: hidden;
@@ -108,16 +119,6 @@ body {
     color: #f1f1f1;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
 
 /*Common*/
 .title {
@@ -162,16 +163,17 @@ body {
 }
 
 /*index Page*/
-.summaryContainer{
+.summaryContainer {
     display: flex;
     flex-wrap: wrap;
 }
-.summaryContainer > a > img{
+
+.summaryContainer>a>img {
     max-width: 200px;
 }
 
 @media screen and (max-width: 450px) {
-    .summaryContainer > a > img{
+    .summaryContainer>a>img {
         max-width: 65px;
     }
 }
@@ -197,10 +199,10 @@ body {
 }
 
 .exampleImages {
-    min-width: 5%;
-    max-width: 300px;
-    border-radius: 30px;
     margin-left: 1%;
+    width: 100%;
+    max-width: 585px;
+    border-radius: 8px;
 }
 
 .no-decoration {
@@ -217,15 +219,28 @@ body {
 
 .projectContainer {
     margin-top: 20px;
-    ;
 }
 
-.video {
+.projectImages {
     width: 100%;
     max-width: 585px;
+    border-radius: 10px;
 }
 
-.blenderImage {
-    border-radius: 15px;
-    max-width: 600px;
+
+/* Media */
+@media screen and (max-width: 700px) {
+    .sidenav {
+        display: none;
+        left: -200px;
+        animation: slide 0.5s forwards;
+    }
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
 }
