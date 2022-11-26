@@ -171,6 +171,7 @@ body {
 .summaryContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .summaryContainer>a>img {
@@ -179,7 +180,7 @@ body {
 
 @media screen and (max-width: 450px) {
     .summaryContainer>a>img {
-        max-width: 65px;
+        max-width: 60px;
     }
 }
 
@@ -247,6 +248,7 @@ body {
     .listItems{
         display: block;
     }
+
 }
 
 @-webkit-keyframes slide {
