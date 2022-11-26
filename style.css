@@ -209,6 +209,10 @@ body {
     max-width: 585px;
     border-radius: 8px;
 }
+.indexImages{
+    margin-left: 1%;
+    max-width: 585px;
+}
 
 .no-decoration {
     text-decoration: none;
