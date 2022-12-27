@@ -78,7 +78,7 @@ body {
 .sidenav {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
-    width: 200px;
+    width: clamp(10vw,12vw,15vw);
     /* Set the width of the sidebar */
     position: fixed;
     /* Fixed Sidebar (stay in place on scroll) */
@@ -108,7 +108,7 @@ body {
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: clamp(12px,2vw,25px);
     color: #818181;
     display: block;
     text-align: start;
@@ -204,10 +204,9 @@ body {
     justify-content: center;
 }
 
-.exampleImages {
+.exampleImagesC {
     margin-left: 1%;
-    width: 100%;
-    max-width: 585px;
+    width: 55%;
     border-radius: 8px;
 }
 .indexImages{
@@ -239,11 +238,15 @@ body {
 
 
 /* Media */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
     .sidenav {
         display: none;
         left: -200px;
         animation: slide 0.5s forwards;
+        width: 200px;
+    }
+    .sidenav a {
+        font-size: 25px;
     }
     .listItems{
         display: block;
