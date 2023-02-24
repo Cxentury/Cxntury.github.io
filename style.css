@@ -24,6 +24,10 @@ body {
     border-radius: 8px;
 }
 
+.ml-5{
+    margin-left: 10px !important;
+}
+
 /*Display*/
 .imageDisplay {
     position: relative;
@@ -170,12 +174,15 @@ body {
 /*index Page*/
 .summaryContainer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 70%;
 }
 
-.summaryContainer>a>img {
-    max-width: 200px;
+.indexImages{
+    border-radius: 30%;
+    margin-left: 1%;
+    max-width: 100px;
 }
 
 @media screen and (max-width: 450px) {
@@ -208,10 +215,6 @@ body {
     margin-left: 1%;
     width: 55%;
     border-radius: 8px;
-}
-.indexImages{
-    margin-left: 1%;
-    max-width: 585px;
 }
 
 .no-decoration {
