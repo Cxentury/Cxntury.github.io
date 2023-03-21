@@ -1,4 +1,5 @@
 let slides = document.getElementsByClassName("imageDisplay");
+document.querySelectorAll(".projectImages").forEach(el => el.addEventListener("click",img => window.open(img.target.src, '_blank') ));
 
 for (let index = 0; index < slides.length; index++) {
     slides[index].querySelectorAll(".arrowHitbox").forEach(el => addListener(el, index));
