@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400&display=swap"
         rel="stylesheet">
     <script src="./script/script.js" defer></script>    
+    <script src="./script/projectImages.js" defer></script>
     <title>C++</title>
 </head>
 
@@ -33,7 +34,7 @@
             <a href="./Java.html">Java</a>
         </div>
         <div class="navElement">
-            <!-- <a href="./C++.html">C++</a> -->
+            <a href="./C++.html">C++</a>
         </div>
         <div class="navElement">
             <a href="./C.html">C</a>
@@ -50,7 +51,7 @@
             <div id="introduction">
                 <p class="description">
                     A 3D engine made from scratch using openGL, started as an open-ended school project and continued on my personal github.
-                    The models displayed are the ones I made in <a href="./Blender.html" class="no-decoration">Blender.</a><br>
+                    The models displayed here are the ones I made in <a href="./Blender.html" class="no-decoration">Blender.</a><br>
                     I was already interested in 3D graphics and this project helped me gain a deeper understanding of how it works behind the scenes 
                     (even though I still have a lot to learn).
                 </p>
@@ -59,8 +60,8 @@
             <div id="exImages">
                 <h2 class="title">Images from the engine</h2>
                 <div class="displayedImages">
-                    <img src="C++/lowLight.png" class="exampleImagesC">
-                    <img src="C++/highLight.png" class="exampleImagesC">
+                    <img src="C++/room/normal.jpg" class="projectImages exampleImagesC">
+                    <img src="C++/room/chromaticAberation.jpg" class="projectImages exampleImagesC">
                 </div>
             </div>
             <br>
@@ -70,12 +71,12 @@
                 <div class="description">
                     <ul>
                         <li>Managing the camera</li>
-                        <li>Loading models</li>
-                        <li>Creating the shaders</li>
-                        <li>Manage lightning, materials and textures.</li>
+                        <li>Implementing all Shaders</li>
+                        <li>Managing lighting, materials and textures.</li>
+                        <li>Made quick post-processing effects like box blur and chromatic aberration</li>
                         <li>...</li>
                     </ul>
-                    The list is quite simplified but all the source code can be found on my <a href="https://github.com/Cxentury/Shady" class="no-decoration">Github</a><br>
+                    The list is quite simplified, but all the source code can be found on my <a href="https://github.com/Cxentury/CppOGL" class="no-decoration">Github</a><br>
                     A big part of what I learned is thanks to the website <a href="https://learnopengl.com/" class="no-decoration">learnopengl</a>.
                 </div>
             </div>
@@ -84,9 +85,8 @@
                 <h2 class="title">Side Notes</h2>
                 <p class="description">
                     This is still a huge work in progress as making a 3D engine is something really complex.<br>
-                    My models were not supposed to be looked up close so they lack detail, and the lightning isn't really helping but I'm trying to make it look more natural.<br>
-                    Another problem is that blender does not export anything other than Principled BSDF (as far as I've tested and searched), <br>it also does not convert well (or not at all)
-                    texture nodes so I had to reduce all my textures to basic BSDF which looks quite unnatural.
+                    One problem is that blender cannot export anything other than Principled BSDF in .FBX, <br>
+                    so I had to reduce all my textures to basic BSDF which looks quite unnatural.
                 </p>
             </div>
         </div>
