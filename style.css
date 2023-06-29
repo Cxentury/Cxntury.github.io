@@ -259,10 +259,8 @@ body {
     width: 100%;
     max-width: 585px;
     border-radius: 10px;
-    transition: 0.3s;
     cursor: pointer;
 }
-
 /* .imageDisplay:hover, .projectContainer > img:hover, .projectContainer > video:hover{
     z-index: 99;
     transform: scale(1.30);
