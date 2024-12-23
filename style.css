@@ -83,17 +83,15 @@ body {
 }
 /* Top navBar */
  .topnav {
+    z-index: 99;
     background-color: #191919;
     position: sticky;
     top: 0;
     overflow: hidden;
-    /* display:flex; */
-    /* justify-content: center; */
     gap:20px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.40);
-
+    transition: ease .3s;
 }
-  
 .topnav a {
     float: left;
     display: block;
@@ -181,11 +179,14 @@ body {
     max-width: 50px;
 }
 
+.ln1-6{
+    line-height: 1.6;
+}
+
 .flex {
     display: flex;
     align-items: center;
     flex-direction: column;
-    line-height: 1.6;
 }
 
 .flex-row {
