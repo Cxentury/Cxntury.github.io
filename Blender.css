@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.flex-30{
+  flex: 30% !important;
+}
+
 .w-80{
   width: 90%;
 }
@@ -27,7 +31,7 @@
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .middle {
@@ -57,6 +61,7 @@
 .imgContainer{
   transition: .3s ease;
   position: relative;
+  /* transition: opacity 0.1 ease; */
 }
 
 .imgContainer:hover{
@@ -78,6 +83,22 @@
 .imgContainer:hover .middle {
   opacity: 1;
 }
+
+.imgContainer .final{
+  opacity: 1;
+  position: relative;
+}
+
+.imgContainer .other{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.imgContainer:hover .final{
+  opacity: 0;
+}
+
 
 .center {
   transition: ease .3s;
