@@ -238,7 +238,8 @@ body {
 /*index Page*/
 .summaryContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap:50px;
     margin: auto;
     max-width: 70%;
 }
