@@ -5,76 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400&display=swap"
         rel="stylesheet">
-    <script src="./script/script.js" defer></script>    
-    <script src="./script/projectImages.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>C++</title>
 </head>
 
 <body>
-    <div class="topnav" id="navMenu">
-        <a href="./index.html">Home</a>
-        <!-- <a href="./Js.html">JavaScript</a> -->
-        <a  href="Blender.html">Blender</a>
-        <a class="active" href="./C++.html">C++</a>
-        <a href="https://github.com/Cxentury">GitHub</a>
-        <!-- <a href="./Java.html">Java</a> -->
-        <!-- <a href="./C.html">C</a> -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <ion-icon name="menu-outline"></ion-icon>
-          </a>
-    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blender.html">Blender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="C++.html">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="C.html">C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Unity.html">Unity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-8 d-flex flex-column gap-2">
+        <div class="title d-flex">
+            <svg class="me-3" width="80" role="img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 344.35"
+                enable-background="new 0 0 306 344.35" xml:space="preserve">
+                <path fill="#00599C"
+                    d="M302.107,258.262c2.401-4.159,3.893-8.845,3.893-13.053V99.14c0-4.208-1.49-8.893-3.892-13.052L153,172.175  L302.107,258.262z" />
+                <path fill="#004482"
+                    d="M166.25,341.193l126.5-73.034c3.644-2.104,6.956-5.737,9.357-9.897L153,172.175L3.893,258.263  c2.401,4.159,5.714,7.793,9.357,9.896l126.5,73.034C147.037,345.401,158.963,345.401,166.25,341.193z" />
+                <path fill="#659AD2"
+                    d="M302.108,86.087c-2.402-4.16-5.715-7.793-9.358-9.897L166.25,3.156c-7.287-4.208-19.213-4.208-26.5,0  L13.25,76.19C5.962,80.397,0,90.725,0,99.14v146.069c0,4.208,1.491,8.894,3.893,13.053L153,172.175L302.108,86.087z" />
+                <g>
+                    <path fill="#FFFFFF"
+                        d="M153,274.175c-56.243,0-102-45.757-102-102s45.757-102,102-102c36.292,0,70.139,19.53,88.331,50.968   l-44.143,25.544c-9.105-15.736-26.038-25.512-44.188-25.512c-28.122,0-51,22.878-51,51c0,28.121,22.878,51,51,51   c18.152,0,35.085-9.776,44.191-25.515l44.143,25.543C223.142,254.644,189.294,274.175,153,274.175z" />
+                </g>
+                <g>
+                    <polygon fill="#FFFFFF"
+                        points="255,166.508 243.666,166.508 243.666,155.175 232.334,155.175 232.334,166.508 221,166.508    221,177.841 232.334,177.841 232.334,189.175 243.666,189.175 243.666,177.841 255,177.841  " />
+                </g>
+                <g>
+                    <polygon fill="#FFFFFF"
+                        points="297.5,166.508 286.166,166.508 286.166,155.175 274.834,155.175 274.834,166.508 263.5,166.508    263.5,177.841 274.834,177.841 274.834,189.175 286.166,189.175 286.166,177.841 297.5,177.841  " />
+                </g>
+            </svg>
+            <h1 class="display-2 header grey-text">C++</h1>
+        </div>
+        <p class="lead mt-2">
+            A 3D engine made from scratch using openGL, started as an open-ended school project and
+            continued on my personal github.
+        </p>
+        <p class="description">
+            The models displayed here are the ones I made in <a href="./Blender.html" class="no-decoration">Blender.</a>
+            I was already interested in 3D graphics and this project helped me gain a deeper understanding
+            of how it works behind the scenes.
+        </p>
 
-    <div class="title flex-row">
-        <h1>3D engine (WIP)</h1>
-        <a href="https://github.com/Cxentury/Shady"><img src="logos/GitHub-Mark-Light-120px-plus.png"
-                class="ml-20 logoGitHub"></a>
-    </div>
-    <div class="flex ln1-6">
-        <div class="container">
-            <div id="introduction">
-                <p class="description">
-                    A 3D engine made from scratch using openGL, started as an open-ended school project and continued on my personal github.
-                    The models displayed here are the ones I made in <a href="./Blender.html" class="no-decoration">Blender.</a><br>
-                    I was already interested in 3D graphics and this project helped me gain a deeper understanding of how it works behind the scenes 
-                    (even though I still have a lot to learn).
-                </p>
+        <h2 class="title">Images from the engine</h2>
+        <div class="row g-3 mt-3 mb-3">
+            <div class="col-12 col-md-6">
+                <img src="C++/room/normal.jpg" class="img-fluid">
             </div>
-            <hr>
-            <div id="exImages">
-                <h2 class="title">Images from the engine</h2>
-                <div class="displayedImages">
-                    <img src="C++/room/normal.jpg" class="projectImages exampleImagesC">
-                    <img src="C++/room/chromaticAberation.jpg" class="projectImages exampleImagesC">
-                </div>
+            <div class="col-12 col-md-6">
+                <img src="C++/room/chromaticAberation.jpg" class="img-fluid">
             </div>
-            <br>
-            <hr>
-            <div id="programDescription">
-                <h2 class="title">What I did</h2>
-                <div class="description">
-                    <ul>
-                        <li>Managing the camera</li>
-                        <li>Implementing all Shaders</li>
-                        <li>Managing lighting, materials and textures.</li>
-                        <li>Made quick post-processing effects like box blur and chromatic aberration</li>
-                        <li>...</li>
-                    </ul>
-                    The list is quite simplified, but all the source code can be found on my <a href="https://github.com/Cxentury/CppOGL" class="no-decoration">Github</a><br>
-                    A big part of what I learned is thanks to the website <a href="https://learnopengl.com/" class="no-decoration">learnopengl</a>.
-                </div>
+        </div>
+
+        <div id="programDescription">
+            <h2 class="title">What I did</h2>
+            <div class="description">
+                <ul>
+                    <li>Managing the camera</li>
+                    <li>Implementing all Shaders</li>
+                    <li>Managing lighting, materials and textures.</li>
+                    <li>Made quick post-processing effects like box blur and chromatic aberration</li>
+                    <li>...</li>
+                </ul>
+                The list is quite simplified, but all the source code can be found on my <a
+                    href="https://github.com/Cxentury/CppOGL" class="no-decoration">Github</a>
+                A big part of what I learned is thanks to the website <a href="https://learnopengl.com/"
+                    class="no-decoration">learnopengl</a>.
             </div>
-            <hr>
-            <div id="qExplanation">
-                <h2 class="title">Side Notes</h2>
-                <p class="description">
-                    This is still a huge work in progress as making a 3D engine is something really complex.<br>
-                    One problem is that blender cannot export anything other than Principled BSDF in .FBX, <br>
-                    so I had to reduce all my textures to basic BSDF which looks quite unnatural.
-                </p>
-            </div>
+        </div>
+        <div id="qExplanation">
+            <h2 class="title">Side Notes</h2>
+            <p class="description">
+                This is still a huge work in progress as making a 3D engine is something really complex.
+                One problem is that blender cannot export anything other than Principled BSDF in .FBX,
+                so I had to reduce all my textures to basic BSDF which looks quite unnatural.
+            </p>
         </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

@@ -1,0 +1,119 @@
+.flex{
+  display: flex;
+}
+
+.flex-30{
+  flex: 31% !important;
+}
+
+.w-80{
+  width: 90%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+.column img, .column video{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.middle {
+  transition: .3s ease;
+  opacity: 0;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.904);
+  margin: 3px;
+}
+
+.middle h4{
+  margin: .3em;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.imgContainer{
+  transition: .3s ease;
+  position: relative;
+}
+
+.imgContainer:hover{
+  transform: scale(1.03);
+  box-shadow: -18px 6px 14px -7px rgba(0,0,0,0.40);
+  z-index: 98;
+}
+
+.imgContainer:hover img {
+    height: 100%; 
+}
+
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+
+.imgContainer .final{
+  opacity: 1;
+  position: relative;
+}
+
+.imgContainer .other{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.imgContainer:hover .final{
+  opacity: 0;
+}
+
+
+.center {
+  transition: ease .3s;
+  display: block;
+  position: absolute;
+  z-index: 99;
+  width: 50%;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

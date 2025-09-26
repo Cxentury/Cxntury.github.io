@@ -1,0 +1,176 @@
+.navbar{
+  padding-top: 2.5em !important;
+  padding-bottom: 2.5rem !important;
+  background: url('../Blender/Alchemy/finalLight.jpg') center/cover no-repeat;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: brightness(0.7) blur(2px) ;
+  z-index: 0;
+}
+
+.navbar > * {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar, .nav-item{
+  color: white !important;
+  font-size: large;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mt-8{
+  margin-top: 8rem !important;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.no-decoration:hover {
+  opacity: 0.7;
+}
+
+.grey-text{
+  color: #585858 !important;
+}
+
+/* body{
+  font-family: "Robotto", sans-serif !important;
+} */
+
+.header{
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight:700;
+  color:#00599C;
+}
+
+img.img-fluid {
+  border-radius:8px;
+  box-shadow:0 4px 16px rgba(0,0,0,.15);
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+
+img.img-fluid:hover {
+  transform:scale(1.03);
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+
+.image-hover::after {
+  content: "";
+  border-radius:8px;
+  position: absolute;
+  inset: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+  margin:auto;
+  text-align: center;
+}
+
+.image-hover-blender::after{
+  background-color: #302c21b7;
+}
+
+.image-hover-cpp::after{
+  background-color: #201e1bb7;
+}
+
+.image-hover-c::after{
+  background-color: #4e3e3fb7;
+}
+
+.image-hover-unity::after{
+  background-color: #000000b7;
+}
+
+.image-hover:hover::after {
+  opacity: 0;
+  transform: scale(1.03);
+}
+
+.image-hover > .position-absolute {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.index-container{
+  max-width: 1500px;
+  margin:auto;
+  margin-top: 6em;
+  /* margin-left: 10rem; */
+}
+
+.nb-collapse span{
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.nb-collapse{
+  transition: max-width 0.3s ease-in-out;
+  background-color: #2c3e50;
+  z-index: 99;
+  max-width: 60px !important;
+}
+
+.nb-collapse:hover{
+  max-width: 200px !important;
+}
+
+.nb-collapse:hover span {
+  opacity: 1;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background:#f9fafb;
+  color:#222;
+  line-height:1.6;
+}
+
+h2.title {
+  font-size:1.8rem;
+  margin-top:2rem;
+  border-left:4px solid #00599C;
+  padding-left:.5rem;
+}
+
+p.description, li {
+  color:#555;
+}
+
+.title svg {
+  padding:8px;
+  background:#eef6fc;
+  border-radius:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+a.no-decoration {
+  text-decoration:none;
+  color:#00599C;
+  position:relative;
+}
+
+a.no-decoration::after {
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0;
+  height:2px;
+  background:#00599C;
+  transition:width .3s ease;
+}
+
+a.no-decoration:hover::after {
+  width:100%;
+}
+

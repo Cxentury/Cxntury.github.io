@@ -5,41 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="title flex-row">
-        <h1>Thank you for visiting my portfolio</h1>
-    </div>
-    <div class="flex ln1-6">
-        <div class="container">
-            <div id="introduction">
-                <p class="description">
-                    Here is a collection of all the work I've made during my free time or school curriculum.<br>
-                    This website has been made by me using HTML/CSS and a bit of JavaScript.<br>
-                    Source code available <a href="https://github.com/Cxentury/Cxntury.github.io"
-                        class="no-decoration">here</a>
-                </p>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blender.html">Blender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="C++.html">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="C.html">C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Unity.html">Unity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <hr>
-            <div id="exImages">
-                <h2 class="title">List of all the languages and software used in my projects</h2>
-                <div class="summaryContainer">
-                    <a href="./Blender.html"><img src="logos/blender.png" alt="Blender logo" class="indexImages imageDisplay" style="max-width: 110px;"></a>
-                    <!-- <a href="./C.html"><img src="logos/c.png" alt="C logo" class="indexImages imageDisplay"></a> -->
-                    <!-- <a href="./Java.html"><img src="logos/j.png" alt="Java logo" class="indexImages imageDisplay"></a> -->
-                    <!-- <a href="./Js.html"><img src="logos/jsYellow.png" alt="JS logo" class="indexImages imageDisplay"></a> -->
-                    <a href="./C++.html"><img src="logos/C++.png" alt="C++ logo" class="ml-5 indexImages imageDisplay"></a>
+        </div>
+    </nav>
+    <div class="container mt-8">
+        <h1 class="display-2 header grey-text">Cxentury's portfolio</h1>
+        <p class="lead fs-4 mt-2">
+            Here is a collection of some of the work I've made during my free time and school curriculum.<br>
+        </p>
+        <hr>
+        <h2 class="title grey-text" style="border-left:4px solid #302c21b7;">List of all the languages and software used
+            in my projects</h2>
+        <div class="row g-4 justify-content-center mt-5">
+            <div class="col-6 col-md-4">
+                <div class="position-relative image-hover image-hover-blender">
+                    <a href="./Blender.html"><img src="Blender/Alchemy/finalLight.jpg" class="img-fluid"
+                            alt="Blender logo"></a>
+                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                        <h1 class="">Blender</h1>
+                    </div>
                 </div>
             </div>
-            <br>
-            <hr>
+            <div class="col-6 col-md-4">
+                <div class="position-relative image-hover image-hover-cpp">
+                    <a href="./C++.html"><img src="C++/room/normal resized.jpg" class="img-fluid"
+                            alt="Blender logo"></a>
+                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                        <h1 class="">C++</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="position-relative image-hover image-hover-unity">
+                    <a href="./Unity.html"><img src="Unity/climax_frame.jpg" class="img-fluid" alt="Blender logo"></a>
+                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                        <h1 class="">Unity</h1>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- <div class="row g-4 justify-content-center mt-3 mb-5">
+            <div class="col-6 col-md-4">
+                <div class="position-relative image-hover image-hover-c">
+                    <a href="./C.html"><img src="C/pngColor/touhou.png" class="img-fluid" alt="Blender logo"></a>
+                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                        <h1 class="">C</h1>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <a href="./C.html"><img src="logos/c.png" alt="C logo" class="indexImages imageDisplay"></a> -->
+        <!-- <a href="./Java.html"><img src="logos/j.png" alt="Java logo" class="indexImages imageDisplay"></a> -->
+        <!-- <a href="./Js.html"><img src="logos/jsYellow.png" alt="JS logo" class="indexImages imageDisplay"></a> -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
