@@ -142,6 +142,29 @@ h2.title {
   padding-left:.5rem;
 }
 
+.title{
+  animation: animate 1s ease;
+  white-space: nowrap;
+}
+
+.color-python{
+  border-left: 4px solid #FFD43B !important;
+}
+
+.color-asp{
+  border-left: 4px solid #136fb1 !important;
+}
+
+@keyframes animate {
+  0% { 
+    opacity: 0%;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 p.description, li {
   color:#555;
 }

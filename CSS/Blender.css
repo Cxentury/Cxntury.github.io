@@ -55,7 +55,7 @@
 }
 
 .imgContainer{
-  transition: .3s ease;
+  transition:transform .4s ease, box-shadow .4s ease;
   position: relative;
 }
 
