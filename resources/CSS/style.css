@@ -140,6 +140,7 @@ h2.title {
   margin-top:2rem;
   border-left:4px solid #00599C;
   padding-left:.5rem;
+  text-wrap: auto;
 }
 
 .title{
