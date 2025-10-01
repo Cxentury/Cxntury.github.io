@@ -59,6 +59,10 @@
   position: relative;
 }
 
+.imgContainer img{
+  border-radius: 4px;
+}
+
 .imgContainer:hover{
   transform: scale(1.03);
   box-shadow: -18px 6px 14px -7px rgba(0,0,0,0.40);

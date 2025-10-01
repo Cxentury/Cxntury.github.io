@@ -1,7 +1,7 @@
 .navbar{
   padding-top: 2.5em !important;
   padding-bottom: 2.5rem !important;
-  background: url('../Blender/Alchemy/finalLight.jpg') center/cover no-repeat;
+  background: url('../../Blender/Alchemy/finalLight.jpg') center/cover no-repeat;
 }
 
 .navbar::before {
